@@ -51,14 +51,13 @@ $(document).ready(function() {
 });
 //sub-menu active
 $(document).ready(function() {
-  $('.sub-menu li ').click(function(e){
-    $('.nav-side-menu .nav-parent .sub-menu li a').click(function() {
-      $('.nav-side-menu .nav-parent .sub-menu li a').removeClass('active-link-as');
-      $(this).addClass('active-link-as');
-    });
+  // Handle click on submenu items
+  $('.nav-side-menu .nav-parent .sub-menu li a').click(function(e) {
+    $('.nav-side-menu .nav-parent .sub-menu li a').removeClass('active-link-as');
+    $(this).addClass('active-link-as');
     e.stopPropagation();
   });
-  });
+});
 // carousel swiping 
 $(".carousel").swipe({
 
