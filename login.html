@@ -19,12 +19,11 @@
       rel="stylesheet"
     />
     <link href="fonts/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/login.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="css/bootstrap_css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap_css/bootstrap.css" />
+    <link rel="stylesheet" href="inter_fonts/interfont.css" />
+    <link rel="stylesheet" href="css/custom_css/root.css" />
+    <link rel="stylesheet" href="css/custom_css/login.css" />
   </head>
   <style>
     img {
@@ -37,103 +36,133 @@
   </style>
   <body>
     <section class="login-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 login-sec">
-                    <h2 class="text-center">Login Now</h2>
-                    <form class="login-form">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" class="text-uppercase">Username</label>
-                            <input type="text" class="form-control" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1" class="text-uppercase">Password</label>
-                            <input type="password" class="form-control" placeholder="">
-                        </div>
-                        
-                                
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input">
-                            <small>Remember Me</small>
-                            </label>
-                            <button type="submit" class="btn btn-login float-right">Submit</button>
-                        </div>
-                        
-                    </form>
-                    
-                    <div class="copy-text">Created with <i class="fa fa-heart"></i> by <a href="http://grafreez.com">Grafreez.com</a></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4" style="padding: 0">
+            <div class="login-left-section">
+              <div class="logo-content">
+                <img class="login-logo" src="img/logo/logo.jpeg" />
+                <p>Document Management System(DMS)</p>
+              </div>
+              <h2 class="login-heading">User Log In Panel</h2>
+              <form class="forum-group-login">
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="far fa-user"></i>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputAmount"
+                      placeholder="User ID"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="fas fa-unlock-alt"></i>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputAmount"
+                      placeholder="Password"
+                    />
+                  </div>
                 </div>
-                <div class="col-md-8 banner-sec">
-                    <div class="main-carousek">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                             
-                            </ol>
-                        
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                              <div class="item active">
-                                <div class="content-section">
-                                    <div class="text-below">
-                                        <h3>This is your lock out process.</h3>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                    </div>
-                                    <div class="image-below">
-                                       <img src="img/login/login-img.png">
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="item">
-                                <div class="content-section">
-                                    <div class="text-below">
-                                        <h3>This is your lock out process.</h3>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                    </div>
-                                    <div class="image-below">
-                                       <img src="img/login/login-form-img.png">
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="item">
-                                <div class="content-section">
-                                    <div class="text-below">
-                                        <h3>This is your lock out process.</h3>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                    </div>
-                                    <div class="image-below">
-                                       <img src="img/login/login-bg.png">
-                                    </div>
-                                </div>
-                              </div>
-                              
-                            </div>
-                        
-                            <!-- Controls -->
-                            <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a> -->
-                          </div>
-                    </div>       
+                <div class="forgetpassword">
+                  <a href="">Forget Password?</a>
                 </div>
+                <button type="submit" class="btn btn-primary btn-block submition-block-btn">
+                  Log In
+                </button>
+                <div class="donotaccount">
+                  <p>Don't Have An Account? <a href=""> SignUp</a></p>
+                </div>
+              </form>
             </div>
+          </div>
+          <div class="col-sm-8 mobileResponsive" style="padding: 0">
+            <div class="banner-carousel">
+              <div class="main-carousel">
+                <div
+                  id="carousel-example-generic"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <div class="content-section">
+                        <div class="text-below">
+                          <h3>This is your lock out process.</h3>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s.
+                          </p>
+                        </div>
+                        <div class="image-below">
+                          <img src="img/login/login-img.png" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="content-section">
+                        <div class="text-below">
+                          <h3>This is your lock out process.</h3>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s.
+                          </p>
+                        </div>
+                        <div class="image-below">
+                          <img src="img/login/login-form-img.png" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="content-section">
+                        <div class="text-below">
+                          <h3>This is your lock out process.</h3>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s.
+                          </p>
+                        </div>
+                        <div class="image-below">
+                          <img src="img/login/login-bg.png" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#carousel-example-generic"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#carousel-example-generic"
+                      data-slide-to="1"
+                    ></li>
+                    <li
+                      data-target="#carousel-example-generic"
+                      data-slide-to="2"
+                    ></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <script src="js/bootstrap.js"></script>
-    <script src="asset/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="asset/jquery-touch.js"></script>
-    <script src="js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-   
+    <script src="js/bootstrap_js/bootstrap.js"></script>
+    <script src="js/custom_js/jquery.min.js"></script>
+    <script src="js/bootstrap_js/bootstrap.min.js"></script>
+    <script src="js/custom_js/jquery-touch.js"></script>
+    <script src="js/custom_js/index.js"></script>
   </body>
 </html>
